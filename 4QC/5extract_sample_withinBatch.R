@@ -1,0 +1,9 @@
+library(ggplot2)
+file="/storage/chenlab/Users/junwang/monkey/data/retcap/retcap_snp_reprod_with/comp_sum"
+data=read.table(file)
+data$p1=data$V4/data$V2
+data$p2=data$V4/data$V3
+data$color=c("batch1",rep("batch2",7))
+pdf("/storage/chenlab/Users/junwang/monkey/data/retcap/retcap_snp_reprod_with/comp_sum.pdf",width=8)
+ggplot(data=data,aes(x=data$p1,y=data$p2,color=data$color))+geom_point(size=5)+theme(text=element_text(size=30),panel.background=element_blank(),panel.grid.major=element_blank(),panel.grid.minor=element_blank(),axis.line=element_line(color="black"))+labs(color="batch")+scale_color_brewer(palette="Set1")+xlab("rep1")+ylab("rep2")
+dev.off()
