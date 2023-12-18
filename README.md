@@ -50,3 +50,5 @@ See README.md in each sub folder
 
 ### The test dataset ###
 The test dataset, a vcf file, is in "test_data" folder.
+
+### The code for data analysis is distributed under the MIT License (MIT).###
