@@ -13,18 +13,31 @@ The analysis is supported for Linux. The package has been tested on the followin
 
 #### Package Dependencies ####
 jdk1.8.0_121
+
 GATK 4.0.0.0
+
 liftOver from UCSC genome browser
+
 bcftools 1.17
+
 macse_v0.9b1.jar 
+
 paml4.9j
+
 ensembl-vep v.101
+
 ANNOVAR v. 07/17/2017 
+
 dbNSFP v.3.5a
+
 HGMD (v.12-20-2016) 
+
 ClinVar (v20230710)
+
 The gnomAD database (v2.1.1)
+
 caret_6.0-93 R package
+
 cvAUC_1.1.4 R package
 
 ### Installation Guide:
@@ -33,6 +46,6 @@ cvAUC_1.1.4 R package
 git clone https://github.com/fe4960/rhemac_retcap.git
 
 ##### Detailed analysis step #####
-See readme.txt in each sub folder
+See README.MD in each sub folder
 
 
