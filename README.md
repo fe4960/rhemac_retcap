@@ -46,6 +46,6 @@ cvAUC_1.1.4 R package
 git clone https://github.com/fe4960/rhemac_retcap.git
 
 ##### Detailed analysis step #####
-See README.MD in each sub folder
+See README.md in each sub folder
 
 
