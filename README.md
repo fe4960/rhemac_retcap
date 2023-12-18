@@ -14,9 +14,15 @@ Runing the analysis code only requires a standard computer with sufficient RAM t
 The analysis is supported for Linux. The package has been tested on the following systems: Linux x86_64
 
 #### Package Dependencies ####
+R 4.0.0
+
+python3.8
+
 jdk1.8.0_121
 
 GATK 4.0.0.0
+
+PLINK v1.90b5.2
 
 liftOver from UCSC genome browser
 
