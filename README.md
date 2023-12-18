@@ -1,6 +1,8 @@
 # rhemac_retcap
 This repository comprises code and analyses for the targeted-sequencing of 1,845 rhesus macaques
 
+#### The code for data analysis is distributed under the MIT License (MIT) ####
+
 ## System Requirements ##
 
 ### Hardware requirements ###
@@ -51,4 +53,3 @@ See README.md in each sub folder
 ### The test dataset ###
 The test dataset, a vcf file, is in "test_data" folder.
 
-### The code for data analysis is distributed under the MIT License (MIT).###
