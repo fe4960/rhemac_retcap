@@ -53,7 +53,7 @@ cvAUC_1.1.4 R package
 #### Install from Github ####
 git clone https://github.com/fe4960/rhemac_retcap.git
 
-#### Detailed analysis step ####
+### Detailed analysis step ###
 See README.md in each sub folder
 
 ### The test dataset ###
