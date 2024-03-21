@@ -14,13 +14,9 @@ $reg = $testing1["region"];
 $ens = $testing1["id"];
 
 $test2 = $mysqli->query("select id,region,genename,transcript from gene where genename='$gene' ");
-
-
 $test3 = $mysqli->query("select v.monkey_variant_id,v.geneID,REPLACE(v.monkey_anno,'_variant','') AS monkey_anno,v.monkey_cDNA,v.hg38_id,v.human_variant_id,REPLACE(v.human_anno,'_SNV','') AS human_anno,v.human_aa,REPLACE(v.flag,'_reference','') AS flag,v.gnomad,LEFT(a.AF,8) AS AF from variant as v inner join AF as a on v.monkey_variant_id=a.variant inner join gene as g on v.geneID=g.genename where g.genename='$gene' and (v.monkey_anno like '%$typ1%' or v.human_anno='$typ2' or v.flag like '%$fla%') ");
-
 $test4 = $mysqli->query("select transcript from gene where genename='$gene' ");
-
-$test5 = $mysqli->query("select count(v.monkey_variant_id) from variant as v inner join gene as g on v.geneID=g.id where g.genename='$gene' ");
+$test5 = $mysqli->query("select count(v.monkey_variant_id) from variant as v inner join gene as g on v.geneID=g.genename where g.genename='$gene' ");
 $testing5=$test5->fetch_assoc();
 $VN = $testing5["count(v.monkey_variant_id)"];
 
