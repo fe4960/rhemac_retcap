@@ -16,8 +16,6 @@ if($end == null){
 $mysqli = mysqli_connect("host", "user", "pass", "db", "3306") or die ("Connection Error");
 
 $test2 = $mysqli->query("select distinct g.genename from variant as v inner join gene as g on v.geneID=g.id where v.monkey_chr='$chr' and v.monkey_pos>'$start' and v.monkey_pos<'$end'  ");
-
-
 $test3 = $mysqli->query("select v.monkey_variant_id,v.geneID,REPLACE(v.monkey_anno,'_variant','') AS monkey_anno,v.monkey_cDNA,v.human_variant_id,REPLACE(v.human_anno,'_SNV','') AS human_anno,v.human_aa,REPLACE(v.flag,'_reference','') AS flag,v.gnomad,LEFT(a.AF,8) AS AF from variant as v inner join AF as a on v.monkey_variant_id=a.variant inner join gene as g on v.geneID=g.id where v.monkey_chr='$chr' and v.monkey_pos>'$start' and v.monkey_pos<'$end' and (v.monkey_anno like '%$typ1%' or v.human_anno='$typ2' or v.flag like '%$fla%') ");
 
 
@@ -51,9 +49,9 @@ echo <<<LABEL
     <script type="text/javascript" src="static/exac.js"></script> 
     <script type="text/javascript">
     
-        number_of_samples = 2123;
+        number_of_samples = ;
         release_number = 1.0;
-        number_of_samples_full = 2123;
+        number_of_samples_full = ;
         $(document).ready(function() {
             $('.number_samples').html(Number(number_of_samples).toLocaleString('en'));
             $('.number_samples_full').html(Number(number_of_samples_full).toLocaleString('en'));
