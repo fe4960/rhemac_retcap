@@ -50,9 +50,9 @@ echo <<<LABEL
     <script type="text/javascript" src="static/exac.js"></script> 
     <script type="text/javascript">
     
-        number_of_samples = 2123;
+        number_of_samples = ;
         release_number = 1.0;
-        number_of_samples_full = 2123;
+        number_of_samples_full = ;
         $(document).ready(function() {
             $('.number_samples').html(Number(number_of_samples).toLocaleString('en'));
             $('.number_samples_full').html(Number(number_of_samples_full).toLocaleString('en'));
