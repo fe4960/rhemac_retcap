@@ -6,7 +6,7 @@ $mysqli = mysqli_connect("host", "user", "pass", "db", "3306") or die ("Connecti
 
 $test = $mysqli->query("select m.id, mv.genotype, mv.source from monkey as m inner join monkey_variant as mv on m.id=mv.monkeyID where mv.variantID='$variant' and m.colonyID='$colony' ");
 
-  echo <<<LABEL
+echo <<<LABEL
 
 <head>
     <title>mCED</title>
@@ -30,9 +30,9 @@ $test = $mysqli->query("select m.id, mv.genotype, mv.source from monkey as m inn
     <script type="text/javascript" src="static/index.js"></script>
     <script type="text/javascript" src="static/exac.js"></script>
     <script type="text/javascript">
-        number_of_samples = 2123;
+        number_of_samples = ;
         release_number = 1.0;
-        number_of_samples_full = 2123;
+        number_of_samples_full = ;
         $(document).ready(function() {
             $('.number_samples').html(Number(number_of_samples).toLocaleString('en'));
             $('.number_samples_full').html(Number(number_of_samples_full).toLocaleString('en'));
